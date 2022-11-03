@@ -12,4 +12,4 @@ RUN apt-get update \
 COPY . /app
 
 WORKDIR /app
-CMD ["/app/udp2raw_x86", "-c -r127.0.0.1:554 -l0.0.0.0:150 --raw-mode faketcp -a -k 'password' --cipher-mode xor --auth-mode simple --lower-level auto -a --keep-rule"]
+CMD ["/app/udp2raw_x86", "-c -r127.0.0.1:554 -l0.0.0.0:150 --raw-mode faketcp -a -k 'password' --cipher-mode xor --auth-mode simple --lower-level auto --keep-rule"]
